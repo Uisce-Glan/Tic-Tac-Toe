@@ -1,0 +1,17 @@
+C:\Users\Oisín\source\repos\Special Tic Tac Toe\Special Tic Tac Toe\bin\Debug\net5.0\Special Tic Tac Toe.exe
+C:\Users\Oisín\source\repos\Special Tic Tac Toe\Special Tic Tac Toe\bin\Debug\net5.0\Special Tic Tac Toe.deps.json
+C:\Users\Oisín\source\repos\Special Tic Tac Toe\Special Tic Tac Toe\bin\Debug\net5.0\Special Tic Tac Toe.runtimeconfig.json
+C:\Users\Oisín\source\repos\Special Tic Tac Toe\Special Tic Tac Toe\bin\Debug\net5.0\Special Tic Tac Toe.runtimeconfig.dev.json
+C:\Users\Oisín\source\repos\Special Tic Tac Toe\Special Tic Tac Toe\bin\Debug\net5.0\Special Tic Tac Toe.dll
+C:\Users\Oisín\source\repos\Special Tic Tac Toe\Special Tic Tac Toe\bin\Debug\net5.0\Special Tic Tac Toe.pdb
+C:\Users\Oisín\source\repos\Special Tic Tac Toe\Special Tic Tac Toe\obj\Debug\net5.0\Special Tic Tac Toe.csproj.AssemblyReference.cache
+C:\Users\Oisín\source\repos\Special Tic Tac Toe\Special Tic Tac Toe\obj\Debug\net5.0\Special Tic Tac Toe.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Oisín\source\repos\Special Tic Tac Toe\Special Tic Tac Toe\obj\Debug\net5.0\Special Tic Tac Toe.AssemblyInfoInputs.cache
+C:\Users\Oisín\source\repos\Special Tic Tac Toe\Special Tic Tac Toe\obj\Debug\net5.0\Special Tic Tac Toe.AssemblyInfo.cs
+C:\Users\Oisín\source\repos\Special Tic Tac Toe\Special Tic Tac Toe\obj\Debug\net5.0\Special Tic Tac Toe.csproj.CoreCompileInputs.cache
+C:\Users\Oisín\source\repos\Special Tic Tac Toe\Special Tic Tac Toe\obj\Debug\net5.0\Special Tic Tac Toe.dll
+C:\Users\Oisín\source\repos\Special Tic Tac Toe\Special Tic Tac Toe\obj\Debug\net5.0\refint\Special Tic Tac Toe.dll
+C:\Users\Oisín\source\repos\Special Tic Tac Toe\Special Tic Tac Toe\obj\Debug\net5.0\Special Tic Tac Toe.pdb
+C:\Users\Oisín\source\repos\Special Tic Tac Toe\Special Tic Tac Toe\obj\Debug\net5.0\Special Tic Tac Toe.genruntimeconfig.cache
+C:\Users\Oisín\source\repos\Special Tic Tac Toe\Special Tic Tac Toe\obj\Debug\net5.0\ref\Special Tic Tac Toe.dll
+C:\Users\Oisín\source\repos\Special Tic Tac Toe\Special Tic Tac Toe\bin\Debug\net5.0\Map.txt

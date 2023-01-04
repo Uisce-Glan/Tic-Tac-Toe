@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "Special Tic Tac Toe/1.0.0": {
+        "runtime": {
+          "Special Tic Tac Toe.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Special Tic Tac Toe/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
