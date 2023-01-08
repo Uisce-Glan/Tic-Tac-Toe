@@ -30,21 +30,127 @@ namespace Special_Tic_Tac_Toe
 
         public bool CheckForBoarder(int x, int y)
         {
-            return Grid[y, x] == "─" || Grid[y, x] == "?" || Grid[y, x] == "+" || Grid[y, x] == "│" || Grid[y, x] == " ";
+            return Grid[y, x] == "─" || Grid[y, x] == "?" || Grid[y, x] == "+" || Grid[y, x] == "│" || Grid[y, x] == " "; // These should be walkable
         }
 
-        public bool TestIfAvailableSquare(int x, int y)
+
+        #region Check if within squares
+        public bool Square1(int x, int y) //These are numbered after the keypad so bottom left is 1 and top right is 9
         {
-            if (y > 10 && y < 22 && x > 10 && x < 28)
+            if (y > 18 && y < 22 && x > 10 && x < 16)
             {
                 return true;
             }
             else return false;
         }
+        public bool Square2(int x, int y) //Bot Middle
+        {
+            if (y > 18 && y < 22 && x > 16 && x < 22)
+            {
+                return true;
+            }
+            else return false;
+        }
+        public bool Square3(int x, int y) // Bot right
+        {
+            if (y > 18 && y < 22 && x > 22 && x < 28)
+            {
+                return true;
+            }
+            else return false;
+        }
+        public bool Square4(int x, int y) // Mid left
+        {
+            if (y > 14 && y < 18 && x > 10 && x < 16)
+            {
+                return true;
+            }
+            else return false;
+        }
+        public bool Square5(int x, int y) // Mid mid
+        {
+            if (y > 14 && y < 18 && x > 16 && x < 22)
+            {
+                return true;
+            }
+            else return false;
+        }
+        public bool Square6(int x, int y) // Mid right
+        {
+            if (y > 14 && y < 18 && x > 22 && x < 28)
+            {
+                return true;
+            }
+            else return false;
+        }
+        public bool Square7(int x, int y) // Top left
+        {
+            if (y > 10 && y < 14 && x > 10 && x < 16)
+            {
+                return true;
+            }
+            else return false;
+        }
+        public bool Square8(int x, int y) // Top mid
+        {
+            if (y > 10 && y < 14 && x > 16 && x < 22)
+            {
+                return true;
+            }
+            else return false;
+        }
+        public bool Square9(int x, int y) // Top right
+        {
+            if (y > 10 && y < 14 && x > 22 && x < 28)
+            {
+                return true;
+            }
+            else return false;
+        }
+        #endregion Check if within squares
 
-        //Need to save an array to keep a track on who has what space, 0 would be empty, 1 would be X and 2 would be O
-
+        // vvv tracks where stuff is placed 0 = no one has placed, 1 = x has placed, 2 = O has placed
+        public int[,] score = new int[3, 3] {
+            {0, 0, 0} ,
+            {0, 0 ,0} ,
+            {0, 0 ,0}
+        };
 
         //Calculate a winner from above code
+        public bool CheckIfOWin() //modified versions of https://stackoverflow.com/a/21370106
+        {
+            // check rows
+            if (score[0, 0] == 2 && score[0, 1] == 2 && score[0, 2] == 2) { return true; }
+            if (score[1, 0] == 2 && score[1, 1] == 2 && score[1, 2] == 2) { return true; }
+            if (score[2, 0] == 2 && score[2, 1] == 2 && score[2, 2] == 2) { return true; }
+
+            // check columns
+            if (score[0, 0] == 2 && score[1, 0] == 2 && score[2, 0] == 2) { return true; }
+            if (score[0, 1] == 2 && score[1, 1] == 2 && score[2, 1] == 2) { return true; }
+            if (score[0, 2] == 2 && score[1, 2] == 2 && score[2, 2] == 2) { return true; }
+
+            // check diags
+            if (score[0, 0] == 2 && score[1, 1] == 2 && score[2, 2] == 2) { return true; }
+            if (score[0, 2] == 2 && score[1, 1] == 2 && score[2, 0] == 2) { return true; }
+
+            return false;
+        }
+        public bool CheckIfXWin()
+        {
+            // check rows
+            if (score[0, 0] == 1 && score[0, 1] == 1 && score[0, 2] == 1) { return true; }
+            if (score[1, 0] == 1 && score[1, 1] == 1 && score[1, 2] == 1) { return true; }
+            if (score[2, 0] == 1 && score[2, 1] == 1 && score[2, 2] == 1) { return true; }
+
+            // check columns
+            if (score[0, 0] == 1 && score[1, 0] == 1 && score[2, 0] == 1) { return true; }
+            if (score[0, 1] == 1 && score[1, 1] == 1 && score[2, 1] == 1) { return true; }
+            if (score[0, 2] == 1 && score[1, 2] == 1 && score[2, 2] == 1) { return true; }
+
+            // check diags
+            if (score[0, 0] == 1 && score[1, 1] == 1 && score[2, 2] == 1) { return true; }
+            if (score[0, 2] == 1 && score[1, 1] == 1 && score[2, 0] == 1) { return true; }
+            return false;
+        }
     }
 }
