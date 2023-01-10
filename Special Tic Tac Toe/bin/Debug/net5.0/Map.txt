@@ -1,5 +1,5 @@
 ﻿ Player 1              Player 2                 
-                                                 
+                                                
 Use WASD to move      Use the Arrow Keys to move
 And X to select       And ENTER to select       
                                                 
