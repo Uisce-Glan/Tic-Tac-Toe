@@ -264,15 +264,15 @@ namespace Special_Tic_Tac_Toe
                 {
                     Console.Clear();
                     Console.WriteLine("O Wins");
-                    Thread.Sleep(5000); //Makes sure no one clicks past the "O Wins"
-                    Console.ReadLine();
+                    Thread.Sleep(2500); //Makes sure no one clicks past the "O Wins"
+                    Console.ReadKey(true);
                     break;
                 }
                 if (Board.CheckIfXWin() == true)
                 {
                     Console.Clear();
                     Console.WriteLine("X Wins");
-                    Thread.Sleep(5000);//Makes sure no one clicks past the "X Wins"
+                    Thread.Sleep(2500);//Makes sure no one clicks past the "X Wins"
                     Console.ReadLine();
                     break;
                 }
@@ -280,8 +280,8 @@ namespace Special_Tic_Tac_Toe
                 {
                     Console.Clear();
                     Console.WriteLine("It's a draw, who would of thought...");
-                    Thread.Sleep(5000);//Makes sure no one clicks past the above line.
-                    Console.ReadLine();
+                    Thread.Sleep(2500);//Makes sure no one clicks past the above line.
+                    Console.ReadKey(true);
                     break;
                 }
             }

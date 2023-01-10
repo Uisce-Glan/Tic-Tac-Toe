@@ -8,18 +8,19 @@ namespace Special_Tic_Tac_Toe
         {
             string testIfPlayAgain;
             var playAgain = true;
-            if (playAgain = true)
+            do
             {
                 Game currentGame = new Game();
                 currentGame.Start();
                 Console.Clear();
-                Console.WriteLine("Do you wish to play again? \n\nYes     No");
+                Console.WriteLine("If you don't want to play again write Exit");
                 testIfPlayAgain = Console.ReadLine();
-                if (testIfPlayAgain == "No" || testIfPlayAgain == "no")
+                if (testIfPlayAgain == "Exit" || testIfPlayAgain == "exit")
                 {
                     playAgain = false;
                 }
-            }
+                Console.Clear();
+            } while (playAgain);
         }
     }
 }
